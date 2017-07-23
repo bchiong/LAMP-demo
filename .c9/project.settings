@@ -8,7 +8,7 @@
     "build": {
         "@builder": "auto",
         "@path": "/.c9/builders",
-        "@saveall": "true"
+        "@saveall": true
     },
     "find.nak": {
         "@searchLimit": 100
@@ -72,6 +72,14 @@
         "configs": {
             "@inited": "true",
             "json()": {
+                "Apache & PHP": {
+                    "command": "",
+                    "debug": false,
+                    "default": true,
+                    "name": "Apache & PHP",
+                    "runner": "Apache httpd (PHP, HTML)",
+                    "toolbar": true
+                },
                 "PHP": {
                     "command": "",
                     "default": true,
