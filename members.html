@@ -3,24 +3,46 @@
 
 <head>
     <title>Members</title>
+    <link href="libraries/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="libraries/bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="style/style/members.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <!--<form method="get" action="members.php">-->
     <form>
-        First Name: <input type="text" name="fname" class="fname"> 
-        Surname: <input type="text" name="sname" class="sname"> 
-        Email: <input type="email" name="email" class="email">
-        <button id="submit-member-form" type="button">Submit</button>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <h2>Find member</h1>
+                <label class="col-sm-4 control-label">First Name </label>
+                <input type="text" name="fname" class="fname form-control" id="inputEmail3">
+                <label class="col-sm-4 control-label">Last name </label>
+                <input type="text" name="sname" class="sname form-control">
+                <label class="col-sm-4 control-label">Email </label>
+                <input type="email" name="email" class="email form-control">
+                <button id="submit-member-form" type="button" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-sm-8">
+                <h2>Results</h1>
+                <div id="divForGraph"></div>
+                <table class="table table-striped">
+        <tr>
+            <th>First Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>No firstname</td>
+            <td>No Surname</td>
+            <td>No Email</td>
+        </tr>
+    </table>
+            </div>
+            </div>
     </form>
 
-    <p class="search-result-table">
-
-    </p>
-
 </body>
-
 <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/jqBarGraph.1.1.js"></script>
 <script type="text/javascript" src="js/members.js"></script>
-
 </html>
